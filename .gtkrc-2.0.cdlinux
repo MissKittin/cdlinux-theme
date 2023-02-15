@@ -1,0 +1,14 @@
+# CdLinux.pl customization
+gtk-icon-theme-name = "OldGNOME2"
+
+style "user-font"
+{
+  font_name="Arial 12"
+}
+widget_class "*" style "user-font"
+
+style "rox" = "default"
+{
+  base[NORMAL] = "#dcdfdc"
+}
+widget_class "*Collection*" style "rox"

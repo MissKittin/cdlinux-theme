@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<AppInfo>
+    <Summary xml:lang="en">cdlinux.pl theme for IceWM and ROX</Summary>
+    <Summary xml:lang="pl">Motyw cdlinux.pl dla IceWM i ROX</Summary>
+    <About xml:lang="en">
+        <Name>cdlinux.pl theme installer</Name>
+        <Version>1.0</Version>
+        <Authors>MissKittin@GitHub, Michał Wróbel, eqlovelace@DeviantArt</Authors>
+        <Homepage label="Repository">https://github.com/MissKittin/cdlinux-theme</Homepage>
+    </About>
+    <About xml:lang="pl">
+        <Name label="Nazwa">Instalator motywu cdlinux.pl</Name>
+        <Version label="Wersja">1.0</Version>
+        <Authors label="Autorzy">MissKittin@GitHub, Michał Wróbel, eqlovelace@DeviantArt</Authors>
+        <Homepage label="Repozytorium">https://github.com/MissKittin/cdlinux-theme</Homepage>
+    </About>
+</AppInfo>

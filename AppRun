@@ -1,0 +1,2 @@
+#!/bin/sh
+exec x-terminal-emulator -e "$(dirname "${0}")/install.sh --press-enter"
