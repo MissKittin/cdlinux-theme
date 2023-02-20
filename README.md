@@ -1,7 +1,7 @@
 # cdlinux.pl theme for IceWM and ROX
 Theme of the above mentioned linux distro for modern debian/ubuntu.
-![screenshot](screenshots/cdlinux-pl.png?raw=true)
-![screenshot](screenshots/cdlinux-new.png?raw=true)
+![screenshot1](screenshots/cdlinux-pl.png?raw=true)
+![screenshot2](screenshots/cdlinux-new.png?raw=true)
 
 ### Included themes
 * cdlinux.pl IceWM theme
@@ -15,8 +15,7 @@ Theme of the above mentioned linux distro for modern debian/ubuntu.
 ### Installation
 Run `install.sh`  
 or if you are using ROX, click on the cloned repository  
-and relogin.  
-After logging in, go to ROX settings and change the icon theme to `ROX-cdlinux` (in Types submenu).
+and relogin.
 
 ### Sources
 * https://www.cdlinux.pl/
