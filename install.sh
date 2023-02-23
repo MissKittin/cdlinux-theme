@@ -87,6 +87,8 @@ cd ..
 [ -e "${HOME}/.gtkrc-2.0" ] && echo '' >> "${HOME}/.gtkrc-2.0"
 echo 'include "'"${HOME}"'/.gtkrc-2.0.cdlinux"' >> "${HOME}/.gtkrc-2.0"
 
+sed -i 's/\/usr\/share\/cdlcenter\/backgrounds\/splash.png/cdlcenter\/splash.png/g' "${HOME}/.icewm/themes/cdlinux.pl/default.theme"
+
 echo 'Theme="cdlinux.pl/default.theme"' > "${HOME}/.icewm/theme"
 icewm -r
 
