@@ -162,4 +162,8 @@ for i in ${HOME}/.config/rox.sourceforge.net/ROX-Filer/pb_*; do
 	sed -i 's/<backdrop style=".*">'"$(echo -n ${XDG_PICTURES_DIR}/cdlinux.pl/cdlinux.png | sed 's/\//\\\//g')"'<\/backdrop>/<backdrop style="Fit">'"$(echo -n ${XDG_PICTURES_DIR}/cdlinux.pl/cdlinux.png | sed 's/\//\\\//g')"'<\/backdrop>/g' "${i}"
 done
 
+mkdir "${HOME}/.icons/default"
+echo '[Icon Theme]' > "${HOME}/.icons/default/index.theme"
+echo 'Inherits=none' >> "${HOME}/.icons/default/index.theme"
+
 exit 0
