@@ -63,7 +63,7 @@ if [ -e "${HOME}/.gtkrc-2.0.cdlinux" ]; then
 	exit 1
 fi
 
-echo -n 'Apply? (Y/n) '
+echo -n 'Apply? (Y/[n]) '
 read answer
 [ "${answer}" = 'Y' ] || exit 0
 
@@ -80,7 +80,7 @@ done
 tar cf - '.themes' '.gtkrc-2.0.cdlinux' | tar xv -C "${HOME}"
 
 [ ! -e "${XDG_PICTURES_DIR}" ] && mkdir -p "${XDG_PICTURES_DIR}"
-cd './Pictures'
+cd "${XDG_PICTURES_DIR}"
 tar cf - 'cdlinux.pl' | tar xv -C "${XDG_PICTURES_DIR}"
 cd ..
 
@@ -162,6 +162,7 @@ for i in ${HOME}/.config/rox.sourceforge.net/ROX-Filer/pb_*; do
 	sed -i 's/<backdrop style=".*">'"$(echo -n ${XDG_PICTURES_DIR}/cdlinux.pl/cdlinux.png | sed 's/\//\\\//g')"'<\/backdrop>/<backdrop style="Fit">'"$(echo -n ${XDG_PICTURES_DIR}/cdlinux.pl/cdlinux.png | sed 's/\//\\\//g')"'<\/backdrop>/g' "${i}"
 done
 
+[ -e "${HOME}/.icons/default" ] && mv "${HOME}/.icons/default" "${HOME}/.icons/default.org-cdlt"
 mkdir "${HOME}/.icons/default"
 echo '[Icon Theme]' > "${HOME}/.icons/default/index.theme"
 echo 'Inherits=none' >> "${HOME}/.icons/default/index.theme"
